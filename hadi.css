@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Poppins, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    color: wheat;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    z-index: 100;
+}
+
+.LOGO {
+    font-size: 3rem;
+    color: coral;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.LOGO:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 2rem;
+    margin-left: 10rem;
+    color: aliceblue;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+}
+
+nav a:hover,
+nav a .active {
+    color: burlywood;
+    border-bottom: 5px solid red;
+}
+
+@media(max-width:995px) {
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 40%;
+        border-left: 3px solid olive;
+        border-bottom: 3px solid orange;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: black;
+        border-top: 0.1rem solid black;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav.a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav.a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid royalblue;
+    }
+
+
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    background-color: black;
+
+}
+.home:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwF_k2ekr1bujzpRCyXnejLo0LO8KLz2d-QA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.home-content {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: orangered;
+    padding-top: 20vh;
+}
+
+.home-contant {
+    font-size: 4rem;
+    border-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img {
+    border-radius: 50%;
+    /* padding-top: 20vh;
+    height: 100vh;
+    width: 100%; */
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0.025px;
+    cursor: pointer;
+    transition: 0.2 linear;
+    margin-top: 18vh;
+ border-color: orangered;
+}
+
+.home-img img:hover {
+    font-size: 18rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    /* transform: scaleX( 1.1) translate(-4px); */
+    box-shadow: 0 003px orangered;
+
+
+}
+
+.typing-text {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-top: 3vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.typing {
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.h1 {
+    font-size: 6rem;
+    color: antiquewhite;
+    margin-top: 20rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color:orangered;
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    transition: 2s;
+    border: 2px solid orangered;
+    border-radius: 40px;
+    box-shadow: 0 0 15px orangered;
+ 
+}
+
+.btn:hover {
+    background-color:transparent;
+    color: orange;
+    box-shadow: none;
+}
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: " Softweredeveloper";
+    color: orangered;
+    animation:words 20s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 30%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+.social-icons a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 7rem;
+height: 7rem;
+background-color: transparent;
+border: 0.2rem solid orangered;
+font-size: 5rem;
+border-radius: 50%;
+margin: 3rem 1.5rem 3rem 0;
+transition: 0.3s ease;
+color: wheat;
+
+}
+.social-icons a:hover{
+    transform: scale(1.3) translateY(-5px);
+    color: black;
+    background-color: blue;
+    box-shadow: 0 01px skyblue;
+}
+
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid orangered;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "WEBSITE DEVELOPER";
+    }
+
+    21%,
+    40% {
+        content: "BACKENED WEBSITE DEVELOPER";
+    }
+
+    41%,
+    60% {
+        content: " WEBSITE DESIGNER";
+    }
+
+    61%,
+    80% {
+        content: " COMPUTER OPERATOR";
+    }
+
+    81%,
+    100% {
+        content: "ANIMIE LOVER";
+    }
+}
+
